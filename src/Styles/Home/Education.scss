@@ -1,0 +1,65 @@
+.education{
+    padding: 7rem 0 5rem;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img{
+        position: absolute;
+        left: 30%;
+        width: 40%;
+    }
+    .column{
+        width: 32%;
+        h1{
+            font-family: 'Pacifico', cursive;
+        }
+        .mid{
+            margin: 5rem 0 3rem;
+        }
+        .content{
+            h1{
+                font-size: 1.5rem;
+                font-weight: 500;
+                color: #008ec2;
+            }
+            h6{
+                margin: 0.7rem 0;
+                font-size: 0.9rem;
+                font-weight: 500;
+                color: #008ec2;;
+            }
+            p{
+                margin: 1rem 0;
+                color: grey;
+            }
+            i{
+                color: grey;
+                span{
+                    margin-left: 0.5rem;
+                    font-weight: 100;
+                }
+            }
+        }
+    }
+    .right{
+        text-align: right;
+    }
+}
+
+
+@media only screen and ( max-width: 786px){
+    .education{
+        flex-direction: column;
+        img{
+            display: none;
+        }
+        .column{
+            width: 75%;
+        }
+        .right{
+            margin-top: 5rem;
+        }
+    }
+}

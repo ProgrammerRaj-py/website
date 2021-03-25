@@ -1,0 +1,121 @@
+.about{
+    position: relative;
+    padding: 10rem 0 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    img{
+        position: absolute;
+        left: 25%;
+        bottom: 0;
+    }
+    .left{
+        h1{
+            font-family: 'Pacifico', cursive;
+        }
+        h2{
+            margin: 1rem 0 3rem;
+            font-weight: 400;
+            position: relative;
+            font-size: 1.1rem;
+        }
+        h2::before{
+            content: "";
+            position: absolute;
+            width: 150px;
+            height: 3px;
+            left: 30%;
+            bottom: 20%;
+            background: #008ec2;
+        }
+        p{
+            font-size: 1.2rem;
+        }
+        .info{
+            color: #008ec2;
+            font-weight: 600;
+        }
+        .mid{
+            margin: 1rem 0;
+        }
+    }
+
+    .right{
+        h1{
+            font-family: 'Pacifico', cursive;
+        }
+        p{
+            margin: 1rem 0 2rem;
+            color:  grey;
+        }
+        table{
+            tr{
+                td{
+                    // padding-right: 2rem;
+                    padding-bottom: 1rem;
+                }
+            }
+        }
+        a{
+            width: 10rem;
+            display: inline-block;
+            margin: 2rem 1rem 2rem 0;
+            text-align: center;
+            line-height: 2.7rem;
+            font-weight: 400;
+        }
+    }
+}
+
+.about::before{
+    content: "<raj>";
+    top: 20%;
+    left: 25%;
+    position: absolute;
+    font-weight: bold;
+    font-size: 10rem;
+    color: #f1f0f0da;
+    z-index: -1;
+}
+.about::after{
+    content: "</raj>";
+    bottom: 10%;
+    right: 35%;
+    position: absolute;
+    font-weight: bold;
+    font-size: 10rem;
+    color: #f1f0f0da;
+    z-index: -1;
+}
+@media only screen and ( max-width: 786px) {
+    .about{
+        padding: 5rem 0;
+        flex-direction: column;
+        img{
+            display: none;
+        }
+    }
+    .about::before{
+        font-size: 8rem;
+        left: 0;
+    }
+    .about::after{
+        font-size: 7rem;
+        right: 0;
+    }
+    .column{
+        width: 90%;
+    }
+    .left{
+        margin-bottom: 7rem;
+    }
+    .right{
+        table{
+            tr{
+                td{
+                    padding-right: 0.5rem;
+                }
+            }
+        }
+    }
+}
